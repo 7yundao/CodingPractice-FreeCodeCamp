@@ -4,28 +4,51 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 -->
 
 <style>
-
+    html{
+        background-color: #24292E;
+    }
     main{
         font-family:Verdana;
         margin: auto;
-        padding: 1rem;
+        padding: 2rem;
         width: fit-content;
-        box-shadow: 10px 10px 50px 10px rgb(65, 65, 65);
         border-radius: 3%;
+        background-color: white;
     }
     #logo{
         height: 2.5rem;
         margin-bottom: -.4rem;
     }
     #title{
-        margin-top:1rem;
+        margin-top:0;
         text-align: center;
+
     }
     #description{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         text-align: center;
+        font-style: italic;
     }
+    input{
+        margin-top: .5rem;
+    }
+    .OneLineInput{
+        margin-top: .5rem;
+        width: 100%;
+        height: 2rem;
+       
+    }
+
     textarea {
+        margin-top: .5rem;
+        width: 100%;
+        height: 4rem;
         resize: none;
+    }
+    #submit{
+        width: 100%;
+        font-size: 1.5rem;
     }
 </style>
 
@@ -36,22 +59,22 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
     <form id="survey-form">
       <label for="Name" id="name-label">Name</label>
       <br>
-      <input type="text" id="name" name="name" placeholder="Full Name"required>
+      <input class="OneLineInput" type="text" id="name" name="name" placeholder="Enter Full Name" required>
       <br>
       <br>
       <label for="email" id="email-label">Email</label>
       <br>
-      <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+      <input class="OneLineInput" type="email" id="email" name="email" placeholder="Enter your email" required>
       <br>
       <br>
       <label for="age" id="number-label">Age</label>
       <br>
-      <input type="number" id="number" name="age" min="10" max="120" placeholder="Integers">
+      <input class="OneLineInput" type="number" id="number" name="age" min="10" max="120" placeholder="Integers">
       <br>
       <br>
       <label for="dropdown" id="programming-experience-label">Which option best describes your coding experience?</label>
       <br>
-      <select id="dropdown" name="programming-experience">
+      <select class="OneLineInput" id="dropdown" name="programming-experience">
         <option value="" disabled selected>Select best description</option>
         <option value="zero">Never saw a line of code</option>
         <option value="student">Serval computer classes in high school and elementry school</option>
@@ -60,6 +83,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
         <option value="senior">worked about 5 years on a handful of programming languages</option>
         <option value="Seasoned">10+ years programming experience with breath and depth</option>
       </select>
+      <br>
       <br>
       <br>
       <fieldset>
@@ -88,7 +112,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
       <br>
       <label for="Comments" id="Comments-label">Comments or suggestions</label>
       <br>
-      <textarea id="Comments" name="Comments" rows="4" cols="72"></textarea>
+      <textarea id="Comments" name="Comments"></textarea>
       <br>
       <br>
       <button type="submit" id="submit">Submit</button>
