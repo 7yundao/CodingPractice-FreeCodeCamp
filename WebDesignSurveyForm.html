@@ -2,3 +2,70 @@
 Link to project requirements:
 https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form
 -->
+
+<html>
+  <main>
+    <h1 id="title">GitHub Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="Name" id="name-label">Name</label>
+      <br>
+      <input type="text" id="name" name="name" placeholder="Full Name"required>
+      <br>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+      <br>
+      <br>
+      <label for="age" id="number-label">Age</label>
+      <br>
+      <input type="number" id="number" name="age" min="10" max="120" placeholder="Integers">
+      <br>
+      <br>
+      <label for="favourite-color" id="number-label">Which option best describes your coding experience?</label>
+      <br>
+      <select id="dropdown" name="programming-experience">
+        <option value="" disabled selected>Select best description</option>
+        <option value="zero">Never saw a line of code</option>
+        <option value="student">Serval computer classes in high school and elementry school</option>
+        <option value="junior">studying computer science in a 4 year degree</option>
+        <option value="intermediate">worked at a programming job for about 1 to 3 years</option>
+        <option value="senior">worked about 5 years on a handful of programming languages</option>
+        <option value="Seasoned">10+ years programming experience with breath and depth</option>
+      </select>
+      <br>
+      <br>
+      <label for="recommendation" id="recommendation">Would you recommend GitHub to a friend?</label>
+      <br>
+      <label for="Definitely"><input id="Definitely" type="radio" name="recommendation" value="Definitely">Definitely</label>
+      <br>
+            <label for="Maybe"><input id="Maybe" type="radio" name="recommendation" value="Maybe">Maybe</label>
+      <br>
+            <label for="Not-Sure"><input id="Not-Sure" type="radio" name="recommendation" value="Not-Sure">Not Sure</label>
+      <br>
+      <br>
+      <label for="improvements" id="improvements">What would you like to see improved? (Check all that apply)</label>
+      <br>
+      <label for="Tutorial"><input id="Tutorial" type="checkbox" name="improvements" value="Tutorial"> Tutorial</label>
+      <br>
+      <label for="Marketplace"><input id="Marketplace" type="checkbox" name="improvements" value="Marketplace"> Marketplace</label>
+      <br>
+      <label for="OpenSourceProject"><input id="OpenSourceProject" type="checkbox" name="improvements" value="OpenSourceProject"> Open Source Project</label>
+      <br>
+      <label for="Notification"><input id="Notification" type="checkbox" name="improvements" value="Notification"> Notification</label>
+      <br>
+      <label for="Portfolio"><input id="Portfolio" type="checkbox" name="improvements" value="Portfolio"> Portfolio</label>
+      <br>
+      <br>
+      <label for="Comments" id="Comments">Comments or suggestions</label>
+      <br>
+      <textarea id="Comments" name="Comments" rows="4" cols="50">
+      </textarea>
+      <br>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</html>
+
